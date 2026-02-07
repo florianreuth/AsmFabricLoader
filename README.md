@@ -47,8 +47,8 @@ my [Discord](https://florianreuth.de/discord).
 ### Gradle/Maven
 
 To use AsmFabricLoader with Gradle/Maven you can
-use [the Maven Central repository](https://mvnrepository.com/artifact/de.florianreuth/AsmFabricLoader)
-or [my own repository](https://maven.florianreuth.de/#/releases/de/florianreuth/AsmFabricLoader).  
+use [the Maven Central repository](https://mvnrepository.com/artifact/de.florianreuth/asmfabricloader)
+or [my own repository](https://maven.florianreuth.de/#/releases/de/florianreuth/asmfabricloader).  
 You can also find instructions how to implement it into your build script there.
 
 ### Jar File
