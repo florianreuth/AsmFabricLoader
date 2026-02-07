@@ -1,5 +1,5 @@
 {
-  "package": "de.florianmichael.asmfabricloader.testmod.transformer",
+  "package": "de.florianreuth.asmfabricloader.testmod.transformer",
   "java": [
     "JavaTransformerTest"
   ],

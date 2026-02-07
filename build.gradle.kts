@@ -1,14 +1,14 @@
-import de.florianmichael.baseproject.*
+import de.florianreuth.baseproject.*
 
 plugins {
     id("fabric-loom")
-    id("de.florianmichael.baseproject.BaseProject")
+    id("de.florianreuth.baseproject")
 }
 
 allprojects {
 
     setupProject()
-    setupFabric()
+    setupFabricRemap()
 
 }
 

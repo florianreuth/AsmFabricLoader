@@ -38,24 +38,24 @@ It also provides the same functionality as [MixinSquared](https://github.com/Baw
 ## Contact
 
 If you encounter any issues, please report them on
-the [issue tracker](https://github.com/FlorianMichael/AsmFabricLoader/issues).  
+the [issue tracker](https://github.com/florianreuth/AsmFabricLoader/issues).  
 If you just want to talk or need help with AsmFabricLoader feel free to join
-my [Discord](https://florianmichael.de/discord).
+my [Discord](https://florianreuth.de/discord).
 
 ## How to add this to your project
 
 ### Gradle/Maven
 
 To use AsmFabricLoader with Gradle/Maven you can
-use [the Maven Central repository](https://mvnrepository.com/artifact/de.florianmichael/AsmFabricLoader)
-or [my own repository](https://maven.florianmichael.de/#/releases/de/florianmichael/AsmFabricLoader).  
+use [the Maven Central repository](https://mvnrepository.com/artifact/de.florianreuth/AsmFabricLoader)
+or [my own repository](https://maven.florianreuth.de/#/releases/de/florianreuth/AsmFabricLoader).  
 You can also find instructions how to implement it into your build script there.
 
 ### Jar File
 
 If you just want the latest jar file you can download it
-from [my build server](https://build.florianmichael.de/job/AsmFabricLoader), [GitHub Actions](https://github.com/FlorianMichael/AsmFabricLoader/actions)
-or use the [releases tab](https://github.com/FlorianMichael/AsmFabricLoader/releases).
+from [my build server](https://build.florianreuth.de/job/AsmFabricLoader), [GitHub Actions](https://github.com/florianreuth/AsmFabricLoader/actions)
+or use the [releases tab](https://github.com/florianreuth/AsmFabricLoader/releases).
 
 ## How to use
 

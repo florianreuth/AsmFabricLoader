@@ -6,25 +6,31 @@
   "description": "Test mod for AsmFabricLoader features",
   "authors": [
     {
-      "name": "FlorianMichael/EnZaXD",
+      "name": "Florian Reuth (EnZaXD)",
       "contact": {
-        "email": "git@florianmichael.de",
-        "homepage": "https://github.com/FlorianMichael"
+        "email": "git@florianreuth.de",
+        "homepage": "https://github.com/florianreuth"
       }
     }
   ],
   "contact": {
-    "homepage": "https://florianmichael.de/",
-    "sources": "https://github.com/FlorianMichael/AsmFabricLoader",
+    "homepage": "https://florianreuth.de/",
+    "sources": "https://github.com/florianreuth/AsmFabricLoader",
     "issues": "https://github.com/ViaVersion/AsmFabricLoader/issues",
-    "email": "contact@florianmichael.de"
+    "email": "florian@florianreuth.de"
   },
   "license": "Apache-2.0",
   "environment": "*",
   "entrypoints": {
-    "afl:prePreLaunch": ["de.florianmichael.asmfabricloader.testmod.TestMod"],
-    "afl:prePrePreLaunch": ["de.florianmichael.asmfabricloader.testmod.TestMod"],
-    "afl:instrumentation": ["de.florianmichael.asmfabricloader.testmod.TestMod"]
+    "afl:prePreLaunch": [
+      "de.florianreuth.asmfabricloader.testmod.TestMod"
+    ],
+    "afl:prePrePreLaunch": [
+      "de.florianreuth.asmfabricloader.testmod.TestMod"
+    ],
+    "afl:instrumentation": [
+      "de.florianreuth.asmfabricloader.testmod.TestMod"
+    ]
   },
   "mixins": [
     "testmod.mixins.json"
@@ -32,7 +38,7 @@
   "custom": {
     "afl:classtransform": "testmod.classtransform.json",
     "afl:unmixer": [
-      "de.florianmichael.asmfabricloader.testmod.mixin.UnmixerTest"
+      "de.florianreuth.asmfabricloader.testmod.mixin.UnmixerTest"
     ]
   },
   "depends": {
