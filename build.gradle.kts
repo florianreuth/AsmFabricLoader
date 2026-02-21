@@ -28,6 +28,7 @@ dependencies {
         exclude(group = "org.ow2.asm", module = "asm")
         exclude(group = "org.ow2.asm", module = "asm-commons")
         exclude(group = "org.ow2.asm", module = "asm-tree")
+        exclude(group = "org.ow2.asm", module = "asm-analysis")
     }
 
     includeTransitiveJijDependencies()
