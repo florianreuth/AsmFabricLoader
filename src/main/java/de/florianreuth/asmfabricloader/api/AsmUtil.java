@@ -17,18 +17,10 @@
 
 package de.florianreuth.asmfabricloader.api;
 
-import sun.misc.Unsafe;
-
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * This class is used to access the {@link Unsafe} instance.
- */
 public class AsmUtil {
-
-    private static Unsafe unsafe;
 
     /**
      * @param input A class path
@@ -60,23 +52,6 @@ public class AsmUtil {
         }
 
         return classNames;
-    }
-
-    /**
-     * @return the {@link Unsafe} instance
-     */
-    public static Unsafe getTheUnsafe() {
-        if (unsafe == null) {
-            try {
-                final Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
-                theUnsafe.setAccessible(true);
-
-                unsafe = (Unsafe) theUnsafe.get(null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }
-        return unsafe;
     }
 
 }

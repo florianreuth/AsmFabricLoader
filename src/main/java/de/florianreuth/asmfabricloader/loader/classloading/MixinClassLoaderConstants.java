@@ -17,6 +17,7 @@
 
 package de.florianreuth.asmfabricloader.loader.classloading;
 
+import de.florianreuth.asmfabricloader.api.GameVersion;
 import de.florianreuth.asmfabricloader.loader.AFLFeature;
 import java.io.IOException;
 import java.io.InputStream;
@@ -45,11 +46,12 @@ public class MixinClassLoaderConstants {
     private static final String DEFAULT_MAPPINGS_PATH = "/afl_mappings.tiny";
 
     public static AMapper getMapper(final ModContainer mod) {
-        return MOD_MAPPINGS.computeIfAbsent(mod, id -> {
-            if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
-                return new VoidMapper(); // In dev environment we don't want to remap
-            }
+        if (!GameVersion.obfuscatedEnvironment() || FabricLoader.getInstance().isDevelopmentEnvironment()) {
+            // No longer load mappings on 26.1+ versions (or in dev environments of older versions)
+            return new VoidMapper();
+        }
 
+        return MOD_MAPPINGS.computeIfAbsent(mod, id -> {
             final Optional<Path> mappingsPath = mod.findPath(getConfiguredMappingsPath(mod));
             if (!mappingsPath.isPresent()) {
                 return new VoidMapper();
