@@ -24,7 +24,7 @@ repositories {
 dependencies {
     jij("net.fabricmc:tiny-mappings-parser:0.3.0+build.17")
     jij("net.lenni0451:Reflect:1.6.2")
-    jij("net.lenni0451.classtransform:core:1.14.1") {
+    jij("net.lenni0451.classtransform:core:1.15.0") {
         exclude(group = "org.ow2.asm", module = "asm")
         exclude(group = "org.ow2.asm", module = "asm-commons")
         exclude(group = "org.ow2.asm", module = "asm-tree")
