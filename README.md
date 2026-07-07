@@ -1,6 +1,6 @@
 # AsmFabricLoader
 
-A series of cursed Fabric hacks and utilities which break everything.
+A series of cursed Fabric hacks and utilities that break everything.
 
 <!-- TOC -->
 * [AsmFabricLoader](#asmfabricloader)
