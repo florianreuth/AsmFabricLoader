@@ -301,5 +301,5 @@ All tests have been passed if you see the following message in the console:
 
 ## Contact
 
-- Issues: https://github.com/florianreuth/Classic4J/issues
+- Issues: https://github.com/florianreuth/AsmFabricLoader/issues
 - Discord: https://florianreuth.de/discord
