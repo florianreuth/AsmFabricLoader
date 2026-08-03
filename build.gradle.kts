@@ -1,30 +1,33 @@
-import de.florianreuth.baseproject.*
+import de.florianreuth.baseproject.integration.configureJarInJar
+import de.florianreuth.baseproject.integration.includeTransitiveJijDependencies
+import de.florianreuth.baseproject.integration.setupFabric
+import de.florianreuth.baseproject.setupProject
+import de.florianreuth.baseproject.setupPublishing
 
 plugins {
-    id("net.fabricmc.fabric-loom-remap")
+    id("net.fabricmc.fabric-loom")
     id("de.florianreuth.baseproject")
 }
 
 allprojects {
 
     setupProject()
-    setupFabricRemap()
+    setupFabric()
 
 }
 
 setupPublishing()
 
-val jij = configureJij()
+val shade = configureJarInJar()
 
 repositories {
-    mavenCentral()
     maven("https://maven.lenni0451.net/everything")
 }
 
 dependencies {
-    jij("net.fabricmc:tiny-mappings-parser:0.3.0+build.17")
-    jij("net.lenni0451:Reflect:1.6.4")
-    jij("net.lenni0451.classtransform:core:1.15.1") {
+    shade("net.fabricmc:tiny-mappings-parser:0.3.0+build.17")
+    shade("net.lenni0451:Reflect:1.6.4")
+    shade("net.lenni0451.classtransform:core:1.15.1") {
         exclude(group = "org.ow2.asm", module = "asm")
         exclude(group = "org.ow2.asm", module = "asm-commons")
         exclude(group = "org.ow2.asm", module = "asm-tree")
