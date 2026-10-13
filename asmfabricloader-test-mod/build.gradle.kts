@@ -1,5 +1,4 @@
 plugins {
-    id("base.java")
     id("base.fabric")
 }
 
